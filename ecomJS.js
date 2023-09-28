@@ -11,8 +11,8 @@ const noItemInCart = document.querySelector(".noItemInCart");
 let cardAllList = [];
 localStorage.setItem("cartItems", cardAllList);
 
-window.addEventListener("DOMContentLoaded", () => {
-  fetch("https://dummyjson.com/products")
+window.addEventListener("DOMContentLoaded", async () => {
+  await fetch("https://dummyjson.com/products")
     .then((res) => res.json())
     .then((data) => {
       obj = data.products;
