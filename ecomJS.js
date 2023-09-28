@@ -9,7 +9,7 @@ const checkOutPrice = document.querySelector(".checkOutPrice");
 const checkOP = document.querySelector(".checkOP");
 const noItemInCart = document.querySelector(".noItemInCart");
 let cardAllList = [];
-localStorage.setItem("cartItems", cardAllList);
+
 
 window.addEventListener("DOMContentLoaded", async () => {
   await fetch("https://dummyjson.com/products")
